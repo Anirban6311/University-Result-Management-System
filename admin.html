@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <nav>
+        <ul>
+            <li><a href="#upload">Upload Results</a></li>
+            <li><a href="#update">Update Results</a></li>
+            <li><a href="#messages">Messages</a></li>
+        </ul>
+    </nav>
+    <section id="upload">
+        <h2>Upload File</h2>
+        <form action="Ans_sheetUpload.php" method="post" enctype="multipart/form-data">
+            <label for="Uid">Uid:</label>
+            <input type="text" id="Uid" name="Uid">
+            <label for="course">Course:</label>
+            <select name="course" id="course">
+                <option value="null">Select course</option>
+                <option value="JAVA">JAVA</option>
+                <option value="DBMS">DBMS</option>
+                <option value="PYTHON">PYTHON</option>
+                <option value="CPP">CPP</option>
+            </select>
+            <label for="photo">Select File:</label>
+            <input type="file" id="photo" name="photo">
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+    <section id="update">
+        <h2>Upload Results</h2>
+        <form action="marksupload.php" method="post">
+            <label for="Uid">Uid :</label>
+            <input type="text" id="Uid" name="Uid" required>
+            <label for="course">Course:</label>
+            <select name="course" id="course">
+                <option value="null">Select course</option>
+                <option value="JAVA">JAVA</option>
+                <option value="DBMS">DBMS</option>
+                <option value="PYTHON">PYTHON</option>
+                <option value="CPP">CPP</option>
+            </select>
+            <label for="exam_type">Exam type:</label>
+            <input type="text" id="exam_type" name="exam_type" required>
+            <!-- <select name="exam" id="exam_type">
+                <option value="null">Select exam type</option>
+                <option value="Mst-1">Mst-1</option>
+                <option value="Mst-2">Mst-2</option>
+                <option value="Final-Sem">Final-Sem</option>
+            </select> -->
+            <label for="marks">Marks:</label>
+            <input type="text" id="marks" name="marks" required>
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul>
+            <li><a href="#message1">Message 1</a></li>
+            <li><a href="#message2">Message 2</a></li>
+            <li><a href="#message3">Message 3</a></li>
+        </ul>
+        <div id="message1">
+            <h3>Message 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit orci eget lacus consequat, in lacinia massa pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. </p>
+        </div>
+        <div id="message2">
+            <h3>Message 2</h3>
+            <p>Ut dictum euismod velit, ac feugiat libero. Fusce ultricies aliquam est, et pretium justo tincidunt at. Etiam in dolor in nulla eleifend malesuada. Vestibulum quis nulla euismod, aliquam elit vel, pulvinar magna. </p>
+        </div>
+        <div id="message3">
+            <h3>Message 3</h3>
+            <p>Phasellus ut sem in felis facilisis dignissim. Curabitur id tincidunt est. Proin a sapien vitae mi vehicula molestie non in turpis. Integer et risus eu nisi ullamcorper euismod vel vel est. </p>
+        </div>
+    </section>
+</body>
+</html>

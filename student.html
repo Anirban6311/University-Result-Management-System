@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" type="text/css" href="student.css">
+</head>
+<body>
+    <header>
+        <h1>Student Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Semester Results</h2>
+        <table>
+            <tr>
+                <th>Subject Name</th>
+                <th>Credits</th>
+                <th>Marks Obtained</th>
+                <th>Error Request</th>
+            </tr>
+            <tr>
+                <?php
+                 while($row=mysqli_fetch_assoc($result))
+                 {
+                 ?>
+                 <td><?php echo $row['course'] ?></td>
+                 <td><?php echo $row['marks'] ?></td>
+            </tr>
+                 <?php
+                 }
+                 ?>
+        </table>
+    </section>
+    <footer>
+        <p>&copy; 2023 Chandigarh University Student Portal</p>
+    </footer>
+</body>
+</html>
+/* button {
+    background-color: #A7C4BC;
+    border: none;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+} */
