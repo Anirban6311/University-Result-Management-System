@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-image: url("https://www.wallpaperflare.com/static/47/728/366/circuit-digital-computer-processor-wallpaper.jpg");
+    background-color: skyblue;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -9,12 +9,11 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #000000; 
     margin-top: 50px;
 }
-
 nav {
-    background-color: #333;
+    background-color: #005eff;
     color: #fff;
     overflow: hidden;
 }
@@ -49,7 +48,7 @@ section {
 }
 
 section h2 {
-    color: #333;
+    color: #170000;
     margin-top: 0;
 }
 
